@@ -83,7 +83,7 @@ const SocialIcon = ({ type, url }: { type: keyof Socials; url: string }) => {
 export const Team = () => {
   return (
     <section
-      id="team%20&%20sponsors"
+      id="team%20&%20partners"
       className="py-32 bg-black relative overflow-hidden"
     >
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-green-900/10 rounded-full blur-[120px] pointer-events-none" />
