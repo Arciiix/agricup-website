@@ -45,6 +45,7 @@ const team: TeamMember[] = [
     role: "Research & Biology Specialist",
     socials: {
       linkedin: "https://www.linkedin.com/in/jakub-michalik-07b7513a0/",
+      github: "https://github.com/llmiseq"
     },
   },
 ];
