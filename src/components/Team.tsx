@@ -43,7 +43,9 @@ const team: TeamMember[] = [
   {
     name: "Jakub Michalik",
     role: "Research & Biology Specialist",
-    socials: {},
+    socials: {
+      linkedin: "https://www.linkedin.com/in/jakub-michalik-07b7513a0/",
+    },
   },
 ];
 
