@@ -160,7 +160,7 @@ export const Team = () => {
             <div className="absolute inset-0 bg-blue-500/5 group-hover:bg-blue-500/10 transition-colors duration-500" />
             <div className="relative z-10 w-full">
               <p className="text-blue-400 uppercase tracking-widest text-sm font-bold mb-6">
-                Education Partners
+                Institutions
               </p>
 
               <div className="space-y-4">
