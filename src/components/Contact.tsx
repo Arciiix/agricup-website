@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Mail, Send, MessageSquare, User, AtSign } from "lucide-react";
+import { Mail, Send, MessageSquare, User, AtSign, MapPin } from "lucide-react";
 
 export const Contact = () => {
   return (
@@ -42,6 +42,32 @@ export const Contact = () => {
                 <Mail className="w-5 h-5" />
                 Contact by e-mail
               </a>
+            </div>
+
+            <div className="mt-12">
+              <div className="flex items-start gap-3 mb-6">
+                <MapPin className="w-6 h-6 text-green-500 shrink-0 mt-1" />
+                <div className="flex flex-col">
+                  <span className="text-white font-semibold text-lg leading-tight">
+                    Harcerska 12
+                  </span>
+                  <span className="text-gray-400 text-base">
+                    44-335 Jastrzębie-Zdrój, Poland
+                  </span>
+                </div>
+              </div>
+              <div className="w-full max-w-md h-64 rounded-2xl overflow-hidden border border-white/10 transition-all duration-500">
+                <iframe
+                  className="grayscale-0"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2567.216526832634!2d18.60867357705738!3d49.95104062319584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4711533ba03439cb%3A0xa7e4cbdf8e43bf00!2zWmVzcMOzxYIgU3prw7PFgiBuciA2IGltLiBLcsOzbGEgSmFuYSBJSUkgU29iaWVza2llZ28!5e0!3m2!1sen!2spl!4v1765882933329!5m2!1sen!2spl"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
             </div>
           </motion.div>
 

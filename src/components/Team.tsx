@@ -20,8 +20,8 @@ const team: TeamMember[] = [
     name: "Artur Nowak",
     role: "Team Leader & Lead Developer (Front-End, Back-End, Hardware)",
     socials: {
-      github: "https://github.com/Arciiix",
       linkedin: "https://www.linkedin.com/in/arciiix/",
+      github: "https://github.com/Arciiix",
     },
   },
   {
@@ -45,7 +45,7 @@ const team: TeamMember[] = [
     role: "Research & Biology Specialist",
     socials: {
       linkedin: "https://www.linkedin.com/in/jakub-michalik-07b7513a0/",
-      github: "https://github.com/llmiseq"
+      github: "https://github.com/llmiseq",
     },
   },
 ];
@@ -85,10 +85,7 @@ const SocialIcon = ({ type, url }: { type: keyof Socials; url: string }) => {
 
 export const Team = () => {
   return (
-    <section
-      id="team%20&%20partners"
-      className="py-32 bg-black relative overflow-hidden"
-    >
+    <section id="team" className="py-32 bg-black relative overflow-hidden">
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-green-900/10 rounded-full blur-[120px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -150,7 +147,9 @@ export const Team = () => {
               <p className="text-green-400 uppercase tracking-widest text-sm font-bold mb-3">
                 Project Supervisor
               </p>
-              <h3 className="text-3xl font-bold text-white">Marcin Paprotny</h3>
+              <h3 className="text-3xl font-bold text-white">
+                Marcin Paprotny, MSc.
+              </h3>
             </div>
           </motion.div>
 
@@ -162,9 +161,11 @@ export const Team = () => {
           >
             <div className="absolute inset-0 bg-blue-500/5 group-hover:bg-blue-500/10 transition-colors duration-500" />
             <div className="relative z-10 w-full">
-              <p className="text-blue-400 uppercase tracking-widest text-sm font-bold mb-6">
-                Institutions
-              </p>
+              <div className="flex items-center justify-center gap-3 mb-6">
+                <p className="text-blue-400 uppercase tracking-widest text-sm font-bold">
+                  Institutions
+                </p>
+              </div>
 
               <div className="space-y-4">
                 <div className="bg-black/40 p-4 rounded-xl border border-white/5 hover:border-blue-500/30 transition-colors">
@@ -177,6 +178,7 @@ export const Team = () => {
                     King John III Sobieski School Complex no. 6
                   </h3>
                   <p className="text-gray-400 text-sm mb-3">Jastrzębie-Zdrój</p>
+                  <Poland />
                   <a
                     href="https://zs6sobieski.pl/"
                     target="_blank"
@@ -198,6 +200,7 @@ export const Team = () => {
                     Vocational Education Center
                   </h3>
                   <p className="text-gray-400 text-sm mb-3">Jastrzębie-Zdrój</p>
+                  <Poland />
                   <a
                     href="https://ckz.jastrzebie.pl/"
                     target="_blank"
@@ -267,5 +270,17 @@ export const Team = () => {
         </motion.div>
       </div>
     </section>
+  );
+};
+
+const Poland = () => {
+  return (
+    <div className="flex w-max mx-auto mb-2 items-center gap-2 px-2 py-1 rounded-full bg-blue-500/10 border border-blue-500/20">
+      <div className="w-5 h-3 rounded-[2px] overflow-hidden shadow-sm border border-white/10">
+        <div className="h-1/2 w-full bg-white" />
+        <div className="h-1/2 w-full bg-[#dc143c]" />
+      </div>
+      <span className="text-xs font-bold text-blue-300">Poland</span>
+    </div>
   );
 };
