@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Cookie, X } from "lucide-react";
 
+const GA_MEASUREMENT_ID = "G-V4G17FH8MN";
+
 export const CookieConsent = () => {
   const [isVisible, setIsVisible] = useState(false);
 
