@@ -51,15 +51,23 @@ const team: TeamMember[] = [
 ];
 
 const sponsors = [
-  { name: "Bank Spółdzielczy", src: "/sponsors/bank.png" },
-  { name: "GigaSell AI", src: "/sponsors/gigasellai.svg" },
+  { name: "Jastrzębie-Zdrój", src: "/jastrzebie.png" },
   { name: "IBS Global", src: "/sponsors/ibs global.png" },
-  { name: "Druczek", src: "/sponsors/logo-druczek.png" },
-  { name: "Hadex", src: "/sponsors/logo-hadex.svg" },
-  { name: "Omozik", src: "/sponsors/omozikfiolet.png" },
-  { name: "Wiślanka", src: "/sponsors/wislanka.png" },
   { name: "WSB", src: "/sponsors/wsb.png" },
+  { name: "Bank Spółdzielczy", src: "/sponsors/bank.png" },
   { name: "Capri", src: "/sponsors/capri.png" },
+  { name: "Wiślanka", src: "/sponsors/wislanka.png" },
+  { name: "Hadex", src: "/sponsors/logo-hadex.svg" },
+  { name: "Wodociągi Jastrzębie-Zdrój", src: "/sponsors/wodociagi.png" },
+  { name: "GigaSell AI", src: "/sponsors/gigasellai.svg" },
+  { name: "SM Marcel", src: "/sponsors/marcel.png" },
+  { name: "Bielaszka", src: "/sponsors/bielaszka.png" },
+  { name: "Omozik", src: "/sponsors/omozikfiolet.png" },
+  { name: "Druczek", src: "/sponsors/logo-druczek.png" },
+  { name: "Haga", src: "/sponsors/haga.png" },
+  { name: "SPIID", src: "/sponsors/spiid.png" },
+  { name: "Trink Hala", src: "/sponsors/trinkhala.png" },
+  { name: "Ela", src: "/sponsors/ela.png" },
 ];
 
 const SocialIcon = ({ type, url }: { type: keyof Socials; url: string }) => {
