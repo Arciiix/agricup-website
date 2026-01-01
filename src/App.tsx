@@ -7,6 +7,7 @@ import { Contact } from "./components/Contact";
 import { Team } from "./components/Team";
 import { Footer } from "./components/Footer";
 import { Gallery } from "./components/Gallery";
+import { CookieConsent } from "./components/CookieConsent";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Contact />
       </main>
       <Footer />
+      <CookieConsent />
     </div>
   );
 }
